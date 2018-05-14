@@ -1,5 +1,5 @@
 FROM gliderlabs/alpine
-LABEL version="0.1"
+LABEL version="0.2"
 LABEL description="This image provides tools to build & deploy Go applications to AWS using serverless framework"
 MAINTAINER hello@moni.sh
 
