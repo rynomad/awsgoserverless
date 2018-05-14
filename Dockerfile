@@ -7,6 +7,7 @@ RUN apk update
 
 # Install go
 RUN apk add go
+RUN apk add libc-dev
 RUN mkdir /gopath
 ENV GOROOT /usr/lib/go
 ENV GOPATH /gopath
