@@ -1,13 +1,14 @@
 FROM gliderlabs/alpine
-LABEL version="0.2"
+LABEL version="0.3"
 LABEL description="This image provides tools to build & deploy Go applications to AWS using serverless framework"
 MAINTAINER hello@moni.sh
 
+# Install dependencies
 RUN apk update
+RUN apk add libc-dev curl
 
 # Install go
 RUN apk add go
-RUN apk add libc-dev
 RUN mkdir /gopath
 ENV GOROOT /usr/lib/go
 ENV GOPATH /gopath
