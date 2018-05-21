@@ -4,6 +4,7 @@ LABEL description="This image provides tools to build & deploy Go applications t
 MAINTAINER hello@moni.sh
 
 # Install deps
+RUN apt-get update
 RUN apt-get install -y python python-pip groff less curl
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y nodejs
