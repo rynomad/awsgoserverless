@@ -1,4 +1,4 @@
-FROM golang:1.9.1
+FROM golang:1.11
 LABEL version="0.4"
 LABEL description="This image provides tools to build & deploy Go applications to AWS using serverless framework"
 MAINTAINER hello@moni.sh
