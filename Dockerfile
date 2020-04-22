@@ -9,7 +9,7 @@ ENV GO111MODULE on
 # Install deps
 RUN apt-get update
 RUN apt-get install -y python python-pip groff less curl
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs zip
 RUN npm install -g serverless
 RUN pip install awscli
